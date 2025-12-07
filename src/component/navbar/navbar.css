@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding-top: 70px; /* عشان الناف بار الثابت ما يغطيش المحتوى */
+  background-color: #ffffff;
+}
+
+/* الناف بار */
+.navbar-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: white;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* اللوجو */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(160, 18, 18);
+}
+
+/* الروابط */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* زر Sign up */
+.navbar-button {
+  background-color: 1572D3;
+  color: #1572d3;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* responsive للشاشات الصغيرة */
+@media (max-width: 992px) {
+  .navbar-frame {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .navbar-links {
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .navbar-button {
+    width: 100%;
+    text-align: center;
+  }
+}

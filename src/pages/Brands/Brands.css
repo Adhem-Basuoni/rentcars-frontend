@@ -1,0 +1,16 @@
+.brands-container {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.brands-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  opacity: 0.5;
+}
+
+.brands-wrapper img {
+  width: 100px;
+  object-fit: contain;
+}

@@ -1,0 +1,163 @@
+/* ================= HERO MAIN LAYOUT ================= */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 70px 20px 40px;
+  position: relative;
+}
+
+/* ================= LEFT TEXT ================= */
+.hero-left {
+  flex-basis: 50%;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #242424;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #1572d3;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: #333;
+  width: 90%;
+}
+
+/* ================= CAR + LOGO-LIKE VECTORS ================= */
+.car-image-container {
+  position: relative;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.car-hero-img {
+  width: 500px;
+  position: relative;
+  z-index: 3;
+}
+
+/* ================= LOGO-LIKE VECTOR POSITIONING ================= */
+.vector {
+  position: absolute;
+  z-index: 1;
+}
+
+.logo-v1 {
+  top: -30px;
+  right: 50px;
+  transform: rotate(-15deg);
+}
+.logo-v2 {
+  top: 20px;
+  right: -20px;
+  transform: rotate(10deg);
+}
+.logo-v3 {
+  bottom: 10px;
+  right: 60px;
+  transform: rotate(-5deg);
+}
+.logo-v4 {
+  bottom: -20px;
+  right: 0px;
+  transform: rotate(5deg);
+}
+
+/* ================= FILTERS BAR UNDER HERO ================= */
+.filters-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.frame-filters {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: 80%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.label-sub {
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.search-btn {
+  padding: 12px 30px;
+  background: #1572d3;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .car-image-container {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .filters-container {
+    margin-top: 30px;
+  }
+
+  .frame-filters {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .frame-filters .section + .section {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #acacac;
+    padding-top: 15px;
+  }
+}

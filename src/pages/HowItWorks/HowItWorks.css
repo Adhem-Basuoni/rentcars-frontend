@@ -1,0 +1,54 @@
+.how-container {
+  width: 100%;
+  text-align: center;
+  padding: 90px 0;
+}
+
+.how-tag {
+  display: inline-block;
+  background: #eaf2ff;
+  color: #3b71fe;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.how-title {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.how-steps {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.step-box {
+  width: 230px;
+  padding: 25px;
+}
+
+.step-icon {
+  width: 50px;
+  height: 50px;
+  background: #eaf2ff;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.step-box h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.step-box p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #777;
+}

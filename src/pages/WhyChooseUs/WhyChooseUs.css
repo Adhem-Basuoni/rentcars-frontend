@@ -1,0 +1,106 @@
+.why-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.why-left {
+  position: relative;
+  width: 50%;
+}
+
+.triangle-bg {
+  width: 80%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+  opacity: 0.15;
+
+  filter: brightness(0) saturate(100%) invert(76%) sepia(12%) saturate(180%)
+    hue-rotate(192deg) brightness(104%) contrast(98%);
+}
+
+.car-img {
+  width: 95%;
+  position: relative;
+  z-index: 2;
+}
+
+.why-right {
+  width: 50%;
+}
+
+.why-badge {
+  display: inline-block;
+  background: #e9f0ff;
+  padding: 7px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #4a6cf7;
+  font-weight: 600;
+}
+
+.why-title {
+  margin: 20px 0 35px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.icon-wrapper svg {
+  width: 50px; /* أو أي حجم تريده */
+  height: 30px;
+}
+.why-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.why-item img {
+  /* أو أي حجم تريده */
+
+  width: 35px;
+  padding: 10px;
+  background: #eef2ff;
+  border-radius: 10px;
+}
+
+.why-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.why-item p {
+  font-size: 14px;
+  color: #555;
+  max-width: 350px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .why-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-left,
+  .why-right {
+    width: 100%;
+  }
+
+  .why-item {
+    justify-content: center;
+  }
+}
