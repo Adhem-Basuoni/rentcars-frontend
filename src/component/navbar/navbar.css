@@ -49,11 +49,40 @@ body {
   white-space: nowrap;
 }
 
+.navbar-links a {
+  text-decoration: none;
+  color: #040000; /* اللون الافتراضي */
+  margin: 0 15px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #1da1f2; /* اللون عند الـ hover */
+}
+
+.navbar-links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #1da1f2; /* لون خط تحت الرابط عند hover */
+  width: 0;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
 /* زر Sign up */
 .navbar-button {
   background-color: 1572D3;
   color: #1572d3;
   padding: 8px 20px;
+
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;

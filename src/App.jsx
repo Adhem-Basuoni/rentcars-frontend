@@ -3,6 +3,8 @@ import Home from "./pages/home/home.jsx";
 import HowItWorks from "./pages/HowItWorks/HowItWorks.jsx";
 import WhyChooseUs from "./pages/WhyChooseUs/WhyChooseUs.jsx";
 import PopularDeals from "../src/component/popular/PopularDeals.jsx";
+import DownloadSection from "./component/DownloadSection/DownloadSection";
+import Footer from "./component/Footer/Footer";
 
 import "./App.css"; // CSS للصفحة بالكامل
 import Brands from "./pages/Brands/Brands.jsx";
@@ -17,6 +19,8 @@ function App() {
       <WhyChooseUs />
 
       <PopularDeals />
+      <DownloadSection />
+      <Footer />
     </>
   );
 }
